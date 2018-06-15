@@ -3,5 +3,6 @@ import axios from 'axios';
 
 // checking user exists
 export const onLoginHandler = values => dispatch => {
-    console.log(values)
+    const res = await axios.get("/api/user", values)
+    console.log(res)
 }
