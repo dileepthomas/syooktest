@@ -1,0 +1,18 @@
+.signup-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 20px 0;
+}
+.signup-container .input-div{
+    padding: 10px;
+}
+
+.signup-container .input-div label{
+    padding-right: 18px;
+}
+
+.signup-container .signup-btn{
+    margin-right: 10px;
+}

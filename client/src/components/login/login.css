@@ -1,0 +1,18 @@
+.login-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 20px 0;
+}
+.login-container .input-div{
+    padding: 10px;
+}
+
+.login-container .input-div label{
+    padding-right: 18px;
+}
+
+.login-container .login-btn{
+    margin-right: 10px;
+}
