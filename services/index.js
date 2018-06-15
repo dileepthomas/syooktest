@@ -9,6 +9,16 @@ module.exports = app => {
         res.send({ data: "success" })
     })
     // api for fetching the user
+    app.get("/api/user", (req,res)=> {
+        console.log(req)
+        user.find({userEmailId: req.body.emailId}, (err,data)=> {
+            if(err){
+                res.send(err)
+            }else{
+                res.send({data})
+            }
+        })
+    })
     // api for saving user
     app.post("/api/user", (req, res) => {
         let data = {
