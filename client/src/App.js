@@ -5,7 +5,7 @@ import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom'
 import Login from './components/login/login'
 import Signup from './components/signup/signup'
-import Dashboard from './components/dashboard/dashboard'
+import { dashboard} from './components/dashboard/dashboard'
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <div>
-            <Route exact path="/" component={access ? Dashboard: Login} />
+            <Route exact path="/" component={access ? dashboard: Login} />
             <Route exact path="/signup" component={Signup} />
           </div>
         </BrowserRouter>

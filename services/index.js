@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 // instance of user model
 const user = mongoose.model("user")
 
+
+
 module.exports = app => {
     // basic api
     app.get("/", (req, res) => {
@@ -34,4 +36,10 @@ module.exports = app => {
             res.send({ data })
         })
     })
+
+    // njs listener service
+    const njsListener = (interval, cb) => {
+        
+    }
+    
 }
